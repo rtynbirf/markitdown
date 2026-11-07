@@ -1,5 +1,8 @@
 # MarkItDown
 
+<p align="center"><img src=".github/social-preview.png" alt="markitdown" width="100%"></p>
+
+
 [![PyPI](https://img.shields.io/pypi/v/markitdown.svg)](https://pypi.org/project/markitdown/)
 ![PyPI - Downloads](https://img.shields.io/pypi/dd/markitdown)
 
