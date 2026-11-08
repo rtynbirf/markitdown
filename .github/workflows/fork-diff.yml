@@ -54,5 +54,5 @@ jobs:
             echo "Апстрим-ветки — дизайн, а не дефект (протокол §2/§3): не удалять, справочник read-only."
           } > report.md
 
-          gh api "repos/${GITHUB_REPOSITORY}/issues/1/comments" -F body=@"report.md" --quiet
+          gh api "repos/${GITHUB_REPOSITORY}/issues/1/comments" -F body=@"report.md" >/dev/null
           echo "Отчёт опубликован в issue #1."
