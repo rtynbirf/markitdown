@@ -1,5 +1,7 @@
 # MarkItDown
 
+> 🫀 **ПРИЁМНЫЙ ОРГАН.** Это трансплантат апстрима `microsoft/markitdown`, живущий по правилам дома `rtynbirf` (доктрина, обложка LABS, ритм роя). Апстрим-ветки сохраняются для сверок и прунятся по пломбе. Не родной орган — приживлённый.
+
 <p align="center"><img src=".github/social-preview.png" alt="markitdown" width="100%"></p>
 
 
