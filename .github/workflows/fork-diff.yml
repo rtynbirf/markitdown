@@ -1,0 +1,58 @@
+name: fork-diff
+
+permissions:
+  contents: read
+  issues: write
+
+on:
+  schedule:
+    - cron: "30 6 * * 1" # понедельник 06:30 UTC — еженедельный осмотр донора
+  workflow_dispatch:
+
+jobs:
+  diff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Дифф против апстрима и отчёт в issue #1
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git remote add upstream https://github.com/microsoft/markitdown.git
+          git fetch upstream main --quiet
+
+          UP_SHA="$(git rev-parse --short upstream/main)"
+          HOME_SHA="$(git rev-parse --short HEAD)"
+          BEHIND="$(git rev-list --count HEAD..upstream/main)"
+          AHEAD="$(git rev-list --count upstream/main..HEAD)"
+
+          {
+            echo "🍴 **fork-diff · еженедельный отчёт** (${GITHUB_SHA::9})"
+            echo ""
+            echo "| показатель | значение |"
+            echo "|---|---|"
+            echo "| upstream/main | \`$UP_SHA\` |"
+            echo "| дом main | \`$HOME_SHA\` |"
+            echo "| дом отстаёт от апстрима на | $BEHIND коммит(ов) |"
+            echo "| дом-патчей поверх апстрима | $AHEAD коммит(ов) |"
+            echo ""
+            echo "Диффстаты мембранных файлов (форк ← апстрим):"
+            echo '```'
+            git diff --stat upstream/main HEAD -- llms.txt README.md AGENTS.md || true
+            echo '```'
+            echo ""
+            if [ "$BEHIND" -gt 0 ]; then
+              echo "⚠️ Апстрим ушёл вперёд — по протоколу \`docs/FORK_PROTOCOL.md §2\` нужен merge-синк (не force-push)."
+            else
+              echo "✅ Дом синхронен с апстримом."
+            fi
+            echo ""
+            echo "Апстрим-ветки — дизайн, а не дефект (протокол §2/§3): не удалять, справочник read-only."
+          } > report.md
+
+          gh api "repos/${GITHUB_REPOSITORY}/issues/1/comments" -F body=@"report.md" --quiet
+          echo "Отчёт опубликован в issue #1."
