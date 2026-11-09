@@ -32,3 +32,4 @@
 - [GitHub](https://github.com/rtynbirf/markitdown)
 - [README](https://github.com/rtynbirf/markitdown/blob/main/README.md)
 - [raw llms.txt](https://raw.githubusercontent.com/rtynbirf/markitdown/main/llms.txt)
+- [PULSE.md](PULSE.md): живой пульс репозитория — прогоны, пломбы, здоровье.
