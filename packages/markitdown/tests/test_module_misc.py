@@ -5,6 +5,7 @@ import json
 import ntpath
 import os
 from pathlib import Path
+import platform
 from types import SimpleNamespace
 from unittest.mock import MagicMock
 
@@ -328,6 +329,10 @@ def test_get_content_disposition_filename_decodes_rfc5987() -> None:
 #    assert test_string in result.text_content
 
 
+@pytest.mark.skipif(
+    platform.system() == "Windows" and platform.machine() != "AMD64",
+    reason="bundled FLAC utility of speech_recognition (x86) unavailable on this Windows arch: честный skip вместо красного",
+)
 def test_speech_transcription_uses_https(monkeypatch: pytest.MonkeyPatch) -> None:
     from speech_recognition.recognizers import google
 
