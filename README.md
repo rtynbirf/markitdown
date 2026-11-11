@@ -2,6 +2,15 @@
   <img src="banner.png" alt="markitdown — Конвертер файлов и офисных документов в Markdown" width="100%">
 </div>
 
+<!--ФОРЖ:МУЗА:НАЧАЛО-->
+<div align="center">
+  <img src="repo-muse.svg" width="100%" alt="Муза markitdown: картина кузни ПОЛИМАТ, раунд 9" />
+  <br/>
+  <img src="forge-divider.svg" width="62%" alt="разделитель кузни ПОЛИМАТ" />
+</div>
+<!--ФОРЖ:МУЗА:КОНЕЦ-->
+
+
 # MarkItDown
 
 > 🫀 **ПРИЁМНЫЙ ОРГАН.** Это трансплантат апстрима `microsoft/markitdown`, живущий по правилам дома `rtynbirf` (доктрина, обложка LABS, ритм роя). Апстрим-ветки сохраняются для сверок и прунятся по пломбе. Не родной орган — приживлённый.
@@ -482,3 +491,10 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+<!--ФОРЖ:ПОДВАЛ-->
+---
+
+<div align="center">
+  <sub>◆ картина и штандарт — ручная ковка <a href="https://github.com/rtynbirf">КУЗНИ ПОЛИМАТ</a> · ЧЕЛОВЕК=АККАУНТ=PID1 ◆</sub>
+</div>
