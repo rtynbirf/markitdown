@@ -1,18 +1,18 @@
 <div align="center">
-  <img src="banner.png" alt="markitdown — Конвертер файлов и офисных документов в Markdown" width="100%">
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/markitdown@main/banner.png" alt="markitdown — Конвертер файлов и офисных документов в Markdown" width="100%">
 </div>
 
 <!--ФОРЖ:МУЗА:НАЧАЛО-->
 <div align="center">
-  <img src="repo-muse.svg" width="100%" alt="Муза markitdown: мастерская ЛИНОТИП, кузня ПОЛИМАТ, раунд 12 · REVE=РЕВО" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/markitdown@main/repo-muse.svg" width="100%" alt="Муза markitdown: мастерская ЛИНОТИП, кузня ПОЛИМАТ, раунд 12 · REVE=РЕВО" />
   <br/>
-  <img src="forge-divider.svg" width="62%" alt="делитель мастерской ЛИНОТИП" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/markitdown@main/forge-divider.svg" width="62%" alt="делитель мастерской ЛИНОТИП" />
 </div>
 <!--ФОРЖ:МУЗА:КОНЕЦ-->
 
 <!--ФОРЖ:ПАСПОРТ:НАЧАЛО-->
 <div align="center">
-  <img src="revo-page.svg" width="100%" alt="РЕВО-паспорт страницы REVO: строение файлов, лексикон, числа — по фактическому контенту" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/markitdown@main/revo-page.svg" width="100%" alt="РЕВО-паспорт страницы REVO: строение файлов, лексикон, числа — по фактическому контенту" />
 </div>
 
 | ФАЙЛОВ | ПАПОК | КОММИТОВ | ОБНОВЛЕНО | РЕЛИЗОВ |
@@ -26,7 +26,7 @@
 
 > 🫀 **ПРИЁМНЫЙ ОРГАН.** Это трансплантат апстрима `microsoft/markitdown`, живущий по правилам дома `rtynbirf` (доктрина, обложка LABS, ритм роя). Апстрим-ветки сохраняются для сверок и прунятся по пломбе. Не родной орган — приживлённый.
 
-<p align="center"><img src=".github/social-preview.png" alt="markitdown" width="100%"></p>
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/rtynbirf/markitdown@main/.github/social-preview.png" alt="markitdown" width="100%"></p>
 
 
 [![PyPI](https://img.shields.io/pypi/v/markitdown.svg)](https://pypi.org/project/markitdown/)
