@@ -1,6 +1,9 @@
 # протокол сборки: SSOT rtynbirf/assembly-protocol (workflow_call)
 name: protocol-verify
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   protocol:
